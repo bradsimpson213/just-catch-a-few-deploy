@@ -1,0 +1,14 @@
+.activeHolder {
+    height: 300px; 
+    width: 225px;  
+    border: 2px solid white;
+    border-radius: 15px;
+    background: blue;
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, .6);
+    margin-left: 50px;
+    margin-top: 23px;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+
+}

@@ -1,0 +1,48 @@
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(0, 1fr);
+  height: 400px;
+  width: 300px;
+  padding: 1em;
+  border: 3px solid white;
+  border-radius: 20px;
+  background-color: blue;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, .6);
+}
+
+
+.chat_window {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  grid-template-rows: 40px 1fr;
+  column-gap: 1em;
+  row-gap: 1em;
+}
+
+.chatBox {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  height: 40px;
+  background-color:lightgray;
+  overflow: visible;
+}
+
+.sendButton{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height: 40px;
+}
+
+.messages {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: blue;
+  background-color:lightgray;
+  border: solid 3px #000;
+  padding: 10px 20px;
+  overflow: scroll;
+}

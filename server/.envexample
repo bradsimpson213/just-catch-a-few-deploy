@@ -1,0 +1,7 @@
+PORT=8080
+DB_USERNAME=postgres
+DB_PASSWORD=
+DB_DATABASE=«db_name»
+DB_HOST=localhost
+JWT_SECRET=<<secret keystring>>
+JWT_EXPIRES_IN=604800

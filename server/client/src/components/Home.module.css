@@ -1,0 +1,92 @@
+.homepage {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(37,48,175,1) 74%, rgba(0,212,255,1) 100%);
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr 2fr 1fr;
+    grid-template-rows: 75px 350px 300px 250px 75px;
+
+}
+
+.navHolder {
+    background: black;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.logowrapper {
+    /* background: gray; */
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: center;
+    justify-self: center;
+}
+
+.imagewrapper{
+    /* background: lightblue; */
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    align-self: flex-start; 
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    
+}
+.text1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-self: center;
+    justify-self: left;
+
+}
+
+.pokeball {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 300px;
+    width: 300px;
+    align-self: center;
+    justify-self: center;
+    
+}
+.text2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    align-self: center;
+    justify-self: right;
+}
+
+.loginbox {
+    font-family: Roboto;
+    background: slategray;
+    border: 2px solid white;
+    border-radius: 20px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.loginButton {
+    color: white;
+    background: green;
+}
+
+.footerHolder {
+    background: black;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+

@@ -1,0 +1,180 @@
+.gameBoard {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 75px 450px 450px 75px;
+}
+
+.navbar {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: black;
+    border-bottom: 10px solid slategrey;
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.newGameButton {
+    color: white;
+    background: green;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-self: center;
+    justify-self: center;
+}
+
+.quitButton {
+    color: white;
+    background: red;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: center;
+    justify-self: center;
+}
+
+.navLogo {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+.infoButton {
+    color: white;
+    background: skyblue;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    align-self: center;
+    justify-self: center;
+}
+
+.activeCards {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.playerActive{
+    height: 350px;
+    width: 600px;
+    border: 3px solid white;
+    border-radius: 20px;
+    background: blue;
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, .6);
+    display: flex;
+    flex-direction: row;  
+}
+
+.playerInfo {
+    height: 200px;
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background: slategray;
+    /* background-image: url("../avatars/myavatar_2.png"); */
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, .6);
+    justify-self: flex-start;
+    align-self: center;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    text-shadow: -1px 1px 0 #000,
+				  1px 1px 0 #000,
+				 1px -1px 0 #000,
+				-1px -1px 0 #000;
+}
+
+.avatar {
+    height: 125px;
+    width: 125px;
+    border: 1px solid white;
+    border-radius: 15px;
+    
+}
+
+.opponentActive{
+    height: 350px;
+    width: 600px;
+    border: 3px solid white;
+    border-radius: 20px;
+    background: red;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .6);
+    display: flex;
+    flex-direction: row row-reverse;
+    justify-content: flex-start;
+}
+
+.opponentInfo  {
+    height: 200px;
+    width: 200px;
+    order: 2;
+    border: 2px solid white;
+    border-radius: 15px;
+    background: slategray;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .6);
+    justify-self: flex-end;
+    align-self: center;
+    margin-left: 50px;
+    
+}
+
+.opponentActive__drop {
+    height: 300px;
+    width: 225px;
+    order: 1;
+    border: 2px solid white;
+    border-radius: 15px;
+    background: red;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .6);
+    align-self: center;
+    margin-left: 60px;
+}
+
+.playerHand {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* .handHolder {
+    height: 400px;
+    width: 1200px;
+    border: 3px solid white;
+    border-radius: 20px;
+    background: blue;
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, .6);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+} */
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background: black;
+}
+

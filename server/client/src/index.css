@@ -1,0 +1,24 @@
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, button, input, label {
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+button, input {
+  font-size: 1.1em;
+}
+
+.wrapper {
+  padding: 1em;
+}
+
+
